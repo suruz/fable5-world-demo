@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome (Vite)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        // This maps the browser's local web server files directly back to your workspace root
+        "http://localhost:5173/*": "$(MSBuildProjectDirectory)/*",
+        "http://localhost:5173/src/*": "(MSBuildProjectDirectory)/src/*",
+        "vite://modules/*": "(MSBuildProjectDirectory)/*",
+        "/src/*": "(MSBuildProjectDirectory)/src/*"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
